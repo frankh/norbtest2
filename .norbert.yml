@@ -1,0 +1,23 @@
+services:
+- name: Norbtest 2
+  url: https://news.ycombinator.com
+  
+services:
+- name: Norbtest 2
+
+checks:
+- name: HTTP Test
+  service: Norbtest 2
+  checkrunner: http
+  severity: Error
+  vars:
+    url: https://news.ycombinator.com
+
+- name: HTTP Test 2
+  service: Norbtest
+  checkrunner: http
+  severity: Error
+  vars:
+    url: https://news.ycombinator.com
+    expected: [401]
+
