@@ -1,9 +1,7 @@
 services:
 - name: Norbtest 2
   url: https://news.ycombinator.com
-  
-services:
-- name: Norbtest 2
+- name: Norbtest
 
 checks:
 - name: HTTP Test
